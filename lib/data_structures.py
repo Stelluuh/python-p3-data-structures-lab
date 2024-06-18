@@ -39,10 +39,15 @@ def get_spiciest_foods(spicy_foods):
 
 
 
-
+# Define a function print_spicy_foods() that takes a list of spicy_foods and output to the terminal each spicy food in the following format using print(): Buffalo Wings (American) | Heat Level: 🌶🌶🌶.
+# HINT: you can use times (*) with a string to produce the correct number of "🌶" emojis.
 def print_spicy_foods(spicy_foods):
+    # use list comprehension to return a new list where we have the name and cuisine with a given heat level print. 
+    # 1. Use 'for in' method to iterate through dictionary of spicy_foods.
+    # 2. grab the value of name, cuisine and heat level.
+    # 3. then we want to use f'' to return a string format.
     for food in spicy_foods:
-            print(f'{food["name"]} ({food["cuisine"]}) | Heat Level: {"🌶" * food["heat_level"]}')
+        print(f'{food["name"]} ({food["cuisine"]}) | Heat Level: {"🌶" * food["heat_level"]}')
     
 
 def get_spicy_food_by_cuisine(spicy_foods, cuisine):
